@@ -1,10 +1,8 @@
-<a href="https://code.csdn.net/ranji1221/longan" target="_blank">csdn longan</a>
-|
-<a href="https://github.com/ranji1221/longan" target="_blank">github longan</a>
+<a href="https://github.com/ranji1221/longan" target="_blank">longan</a>
 |
 <a href="http://www.ranji.org" target="_blank">个人站点</a>
 
-## Longan FrameWork 创始人
+### Longan FrameWork 创始人
 * 姓名：纪冉
 * 年龄：30岁
 * 籍贯：山西省大同人
@@ -13,7 +11,7 @@
 * 简介：不值一提，仅是J2EE爱好者而已。
 * 期望：期待各位技术大神共同参与到该项目中，实现心中的梦想！
 
-## Longan Framework 特点
+### Longan Framework 特点
 * 1. Longan Framework面对的群体：Java程序员、Java项目经理等开发人员。
 * 2. Longan Framework是基于BSD开源协议的开源框架。
 * 3. Longan Framework是基于Maven和GIT作为项目管理工具和版本控制系统的。
@@ -22,7 +20,7 @@
 * 6. Longan Framework核心功能是简单而快速的产生基于j2ee的web-app（开发项目）的框架。
 * 7. Longan Framework可以兼容各大平台，具有很友好的跨平台性。
 
-## Longan Framework  思想
+### Longan Framework  思想
 * 1. 骨架产生器模块（产生web-app的基础骨架模块）
 * 2. 代码产生器模块（产生web-app的model层、persist层、service层、controller层、view(页面)层等代码及相关配置文件）
 * 2. 命令行工具模块（主要包含create app、create model、create persist等功能）
@@ -31,12 +29,12 @@
 * 5. 框架配置模块（xml来配置longan框架的功能）
 * 6. 框架授权机制模块（待定是否需要做）
 
-## 基于Longan Framework产生的web-app的特点：
+### 基于Longan Framework产生的web-app的特点：
 * 1. 产生的web-app是采用SpringMVC3+Spring3+MyBatis3作为基础的架构
 * 2. 产生的web-app是基于JQuery1.8.3+JQuery EasyUI1.3.2实现页面部分的
 * 3. 产生的web-app是基于Jersey作为默认接口设计的（可选为SringMVC/Restlet）
 
-## 参与并共同开发该框架的方法？
+### 参与并共同开发该框架的方法？
 * 1. 配置及安装：jdk1.6及以上、maven3、eclipse/myeclipse
 * 2. 从GitHub或CsdnCode中Pull项目到本地
 * 3. 把项目导入到eclipse或myeclipse (eclipse或myeclipse须安装maven插件)
@@ -47,10 +45,10 @@
 * 8. 最好是能建立分支开发
 * 9. 若有任何疑问请联系作者：JiRan，祝君愉快，冬安！
 
-## 解释为什么该框架的名字叫longan ? 
-* 1. longan是英文，其含义为：桂圆、龙眼。
-* 2. 笔者觉得不论哪个含义都极具中国特色，桂花美酒、团团圆圆、画龙点睛等。
-* 3. 期望国人能自己封装个相当具备竞争力的框架，希望有志之士能参与到其中。
+### 解释为什么该框架的名字叫longan ? 
+* longan是英文，其含义为：桂圆、龙眼。
+* 笔者觉得不论哪个含义都极具中国特色，桂花美酒、团团圆圆、画龙点睛等。
+* 期望国人能自己封装个相当具备竞争力的框架，希望有志之士能参与到其中。
 
 
 
