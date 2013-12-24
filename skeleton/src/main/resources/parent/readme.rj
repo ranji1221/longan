@@ -1,0 +1,49 @@
+<a href="https://github.com/ranji1221/longan" target="_blank">Longan</a>
+|
+<a href="http://www.ranji.org" target="_blank">Personal Site</a>
+
+#### 引言
+* 若您有幸阅读该说明，则表明您是使用Longan框架生成的项目; 
+* 亲，非常感谢您使用Longan Framework生成web-app；
+* 作为该框架的作者，我坚信你的选择是正确的
+* 若对框架有任何问题，请联系QQ( 95724368 )或Email( jiran1221@163.com )
+
+####项目管理
+* Maven3项目依赖及管理
+* Git版本控制
+
+####后台框架
+* 持久层：MyBatis3，强大的ORM框架，便于后期SQL调优
+* 业务层：Spring3.2.4，全世界范围内公认的JavaEE业务处理框架
+* 表现层：SpringMVC 3，MVC设计模式的代表框架
+* 安全框架：Apache Shiro，优秀的安全框架
+* JavaEE规范组件：jsp2.0+servlet2.5
+* JSon处理框架：FastJson/
+
+####测试框架
+* JUnit单元测试
+* Travis-Ci持续集成测试: 优势明显，仅需要.travis.yml配置文件即可
+* JMeter压力及性能测试
+
+####辅助框架
+* 数据源：C3p0/Druid
+* 作业调度框架：Quartz
+
+####前端框架
+* JavaScript框架：jquery1.8+jquery-easyUI-1.8
+* 字体图标插件：font-wesome：字体/图标插件
+* 前端校验插件：Jquery Validation Engine 验证插件：配合SpringMVC的验证框架，页面的校验部分可以简化不少
+* 富文本编辑器：kindEditor(暂定)
+* zTree树框架
+* jquery-fileUpload文件上传插件
+
+####数据库
+* 默认采用MySQL数据库
+* MyBatis3框架很容易可以支持Oracle/DB2/SQLServer等主流数据库
+
+####支持的浏览器
+* chrome
+* firefox
+* ie6/7/8/9/10
+* 其他主流浏览器
+

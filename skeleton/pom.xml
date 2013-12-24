@@ -14,6 +14,17 @@
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
+		<!-- 利用io包的FileUtils工具类处理文件 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>1.3.2</version>
+		</dependency>
+		<!-- 利用dom4j处理xml文件 -->
+		<dependency>
+		    <groupId>dom4j</groupId>
+		    <artifactId>dom4j</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
