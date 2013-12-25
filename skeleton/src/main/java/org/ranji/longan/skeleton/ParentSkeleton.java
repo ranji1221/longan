@@ -1,10 +1,17 @@
 package org.ranji.longan.skeleton;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 
 import org.apache.commons.io.FileUtils;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.OutputFormat;
+import org.dom4j.io.SAXReader;
+import org.dom4j.io.XMLWriter;
 
 /**
  * 创建父骨架的工具类
@@ -38,6 +45,9 @@ public class ParentSkeleton {
 		
 		//-- 6. 项目目录的根下建立README.md文件
 		createReadMeFile(projectDir);
+		
+		//-- 7. 项目目录的根下建立pom.xml文件
+		createPomXmlFile(projectName,s[2],projectDir);
 	}
 
 	/**
@@ -75,8 +85,41 @@ public class ParentSkeleton {
 	}
 	
 	
+	private static void createPomXmlFile(String projectName,String projectSimpleName,File projectDir){
+		File pomFile = new File(projectDir,"pom.xml");
+		URL url = ParentSkeleton.class.getClassLoader().getResource("parent/pom.rj");
+		SAXReader reader = new SAXReader();
+		try {
+			Document doc = reader.read(url);
+			Element rootElm = doc.getRootElement();
+			//-- 1. 设置groupId节点的值
+			Element groupIdElm = rootElm.element("groupId");
+			groupIdElm.setText(projectName.trim());
+			//-- 2. 设置artifactId节点的值
+			Element artifactIdElm = rootElm.element("artifactId");
+			artifactIdElm.setText(projectSimpleName);
+			//-- 3. 设置name节点的值
+			Element nameElm = rootElm.element("name");
+			nameElm.setText(projectSimpleName);
+			
+			//-- 4. 保存文档
+			OutputFormat format = OutputFormat.createPrettyPrint();
+			format.setEncoding("UTF-8");
+			try {
+				XMLWriter writer = new XMLWriter(new FileWriter(pomFile),format);
+				writer.write(doc);
+				writer.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		} catch (DocumentException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	/**
-	 * 根据加载模板的内容，创建目标文件
+	 * 根据加载模板的内容(普通文件)，创建目标文件
 	 * @param templateFilePath 类加载的相对位置即可
 	 * @param destFilePath
 	 */
@@ -88,9 +131,4 @@ public class ParentSkeleton {
 			e.printStackTrace();
 		}
    }
-  
-   
-	public static void main(String[] args) {
-		createParentSkeleton("org.ranji.oa", "D:");
-	}
 }

@@ -2,6 +2,8 @@ package org.ranji.longan.command;
 
 import java.util.Scanner;
 
+import org.ranji.longan.skeleton.ParentSkeleton;
+
 /**
  * Longan框架主命令引导类
  * 
@@ -36,8 +38,15 @@ public class Longan {
 				continue;
 			case 3:
 				if("create".equalsIgnoreCase(resultArr[0])){
-					
+					printCreateInfo();
 				}
+				continue;
+			case 4:
+				if("create".equalsIgnoreCase(resultArr[0]) && "app".equalsIgnoreCase(resultArr[1])){
+					ParentSkeleton.createParentSkeleton(resultArr[2], resultArr[3]);
+					System.out.println("create app "+resultArr[2]+" success! \r\n");
+				}
+				continue;
 			default:
 				continue;
         	}
